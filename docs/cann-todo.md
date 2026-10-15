@@ -50,7 +50,11 @@ Current priorities and maintainer claims are in [PLAN.md](../PLAN.md).
 Completed preparation/compiler/operator work is historical evidence; the
 remaining tasks above require full-model or composed-graph device validation.
 
-[Composed graph CPU preparation](cann-composed-preparation-2026-10-15.md) is
-complete locally and its full proof is public. Candidate81d8e279 awaits hosted
-CPU/SDK and general CI before integration. The physical composed-fallback
-acceptance task in the table remains open.
+[Composed graph CPU preparation](cann-composed-preparation-2026-10-15.md) has
+complete local/public proof and an independently audited hosted CPU control.
+The standalone [actual-graph probe](../tools/ci-heavy/cann-composed/README.md)
+retains18 computes across three shapes and rejects false backend/device/fallback
+and overwritten-evidence claims. Initial official SDK attempts reach final
+static executable linking but fail its SDK search path; the scoped consumer
+repair needs new SDK and applicable CI validation before integration. Physical
+310P mixed CANN/CPU execution remains unvalidated, as does ACL capture/replay.

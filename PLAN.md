@@ -369,3 +369,13 @@ state; do not assume the old404s or missing credentials remain true. Legacy
 MioTTS/Glint integration and completed native sample-rate/binding/UTF-8 fixes
 are historical, not work to reimplement. Consumer-requested binding expansion
 can be scheduled after checking actual exported and wrapped surfaces.
+
+CANN composed-probe checkpoint2026-10-15: standalone CPU implementation is
+prepared in the claimed worktree. A fresh actual ggml build passes five
+contracts,18 computes/three shapes and independent recomputation of12,288
+matrix plus12,288 final values. Missing-CANN, invalid-device, false CPU-fallback
+and evidence-overwrite cases reject. Raw arrays, logs and tested ELF are retained
+under the claimed storage path. A dedicated immutable-checkout workflow is
+prepared for CPU replay followed by official310P/910B SDK compilation. Candidate
+CI and physical mixed-graph execution remain pending; no integration, model,
+ACL capture/replay or speed acceptance yet.
