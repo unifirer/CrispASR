@@ -63,7 +63,11 @@ but fails because static ggml-cann private SDK link directories do not propagate
 to the standalone executable. Failed source81d8e279/log/artifact are retained.
 Repair the probe consumer CMake linkage without production/kernel changes;
 revalidate CPU and both official SDK configurations on a new candidate.
-The910B job remains in progress; MiMo workflow38703457282 remains queued.
+The910B SDK also fails the same final-link search path. The consumer repair
+passes a fresh CPU build/all five tests and an original/fixed CMake-generation
+control: only the fixed command includes the backend SDK library directory.
+No fake SDK library was compiled or executed. New official SDK acceptance is
+still required; MiMo workflow38703457282 remains queued.
 Audit terminal results and integrate only after applicable checks pass.
 Completed local CPU evidence is in HISTORY.md and
 [the preparation receipt](docs/cann-composed-preparation-2026-10-15.md).
@@ -369,13 +373,3 @@ state; do not assume the old404s or missing credentials remain true. Legacy
 MioTTS/Glint integration and completed native sample-rate/binding/UTF-8 fixes
 are historical, not work to reimplement. Consumer-requested binding expansion
 can be scheduled after checking actual exported and wrapped surfaces.
-
-CANN composed-probe checkpoint2026-10-15: standalone CPU implementation is
-prepared in the claimed worktree. A fresh actual ggml build passes five
-contracts,18 computes/three shapes and independent recomputation of12,288
-matrix plus12,288 final values. Missing-CANN, invalid-device, false CPU-fallback
-and evidence-overwrite cases reject. Raw arrays, logs and tested ELF are retained
-under the claimed storage path. A dedicated immutable-checkout workflow is
-prepared for CPU replay followed by official310P/910B SDK compilation. Candidate
-CI and physical mixed-graph execution remain pending; no integration, model,
-ACL capture/replay or speed acceptance yet.
